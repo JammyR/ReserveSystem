@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/icon_dish"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:background="@mipmap/actionbar_friends_normal" />
+
+    <TextView
+        android:textColor="#504f4f"
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@+id/icon_dish"
+        android:text="菜名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:textColor="#d92222"
+        android:id="@+id/tv_price"
+        android:layout_toRightOf="@+id/icon_dish"
+        android:layout_below="@+id/tv_name"
+        android:text="￥12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <com.mcxtzhang.lib.AnimShopButton
+        android:id="@+id/btnEle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:addEnableBgColor="#3190E8"
+        app:addEnableFgColor="#ffffff"
+        app:hintBgColor="#3190E8"
+        app:hintFgColor="#ffffff"
+
+        app:maxCount="9"
+        app:hintBgRoundValue="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        />
+
+</RelativeLayout>
